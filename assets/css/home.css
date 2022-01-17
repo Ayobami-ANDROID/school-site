@@ -1,0 +1,168 @@
+/* navbar */
+.navbar {
+    background-color: rgb(158, 42, 44);
+    color: rgba(255, 248, 211, 1);
+    height: 80px;
+}
+
+
+.navbar .btn {
+    border: wheat;
+    background-color: wheat;
+}
+
+/* navbar */
+
+/* carousel */
+.carousel.head {
+    margin-top: 80px;
+    background-color: #220707;
+    height: 400px;
+}
+.carousel.head img {
+    height:400px;
+    width: 100%;
+    /* margin-top: 80px; */
+}
+.carousel-caption {
+    margin-bottom: 50px;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+
+/* features */
+
+/* features ends */
+
+/* carousel ends */
+/* teachers */
+section.teacher-bg {
+    background-color: rgb(255, 248, 211);
+    padding: 20px;
+}
+.meet {
+    padding: 40px;
+}
+.card.teachers {
+    height: 390px;
+    width: 250px;
+    border: none;
+}
+
+.card.teachers .card-img {
+    height: 320px;
+    width: 249px;
+}
+.card-footer {
+    /* background-color: rgb(158, 42, 44); */
+    height: 50px;
+    margin-left: 3px;
+    padding-left: 3px;
+    background: rgba(158, 42, 44, 0.774);
+    background-color: rgba(158, 42, 44, 0.774);
+}
+.card-footer #teacherName, .card-footer #teacherSubject {
+    /* padding-bottom: 20px; */
+    font-size: small;
+    /* background: rgb(158, 42, 44); */
+    color: black;
+
+}
+
+/* .teacher-bg .meet {} */
+/* teachers */
+/* footer */
+footer {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+
+footer {
+    background: #220707;
+    padding-top: 50px;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer ul {
+    padding-left: 0px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+footer li::before {
+    content: "-";
+    color: #cccccc;
+    padding-right: 5px;
+}
+
+footer li {
+    padding: 5px 0;
+}
+
+footer li a {
+    color: #cccccc;
+    transition: all .3s ease;
+}
+
+footer li a:hover {
+    color: #fff;
+}
+
+#footer .footer-newsletter {
+    font-size: 15px;
+  }
+  
+  #footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    text-align: left;
+    border: 1px solid #e0e5e2;
+  }
+  
+  #footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+  
+  #footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: rgb(158, 42, 44);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .footer-newsletter form input[type="submit"]:hover {
+    background: wheat;
+  }
+ 
+/* footer ends */

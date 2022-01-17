@@ -1,0 +1,168 @@
+.pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item > li.active > a {
+    background: #9E2A2B;
+}
+
+.pcoded .pcoded-navbar .pcoded-item li a {
+    color: #9E2A2B;
+}
+.pcoded .pcoded-navbar .pcoded-item > li > a:link {
+    color: #9E2A2B;
+}
+.pcoded .pcoded-navbar .pcoded-item li a:hover {
+    background: #9E2A2B;
+    color: wheat;
+    border-radius: 7px;    
+}
+
+.pcoded .main-menu .main-menu-header:before {
+    background: rgba(245, 222, 179, 0.5);
+}
+/* user menu */
+/* not right now */
+/* user menu ends */
+
+.card {
+    border-radius: 10px;
+}
+
+.card.hellocard, .card.barChart {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.card#assNum {
+    background: linear-gradient(135deg, wheat 0%, #9E2A2B 100%);
+    color: wheat;
+    /* height: 100%; */
+}
+
+.card#book-rec {
+    border-radius: 15px;
+    height: 100%;
+}
+.card-img-top img {
+    width: 100%;
+    border-radius: [object Object]px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.card#assCard {
+    width: 100%;
+    background: rgba(245, 222, 179, 0.719);
+}
+
+.card-header .badge {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: black;
+}
+.card-footer #submissionTime {
+    background: #9e2a2c50;
+    color: white;
+    border-radius: 10px;
+    padding: 13px;
+
+}
+
+/* Teachers */
+/* dashboard1 */
+.cardsHead {
+    width: 100%;
+    color: black;
+    font-style: italic;
+    padding: 10px;
+    text-shadow: #9E2A2B;
+}
+#recentClass .bg-brown {
+    background-color: #9E2A2B;
+    color: wheat;
+}
+#recentClass .card-block {
+    background-color: wheat;
+    color: #9E2A2B;
+}
+/* dashboard2 */
+/* class room */
+.card.classrule {
+    width: 100%;
+}
+.classrule #rule ul {
+    list-style-type: circle;
+}
+.classrule .card-header  {
+    background-color: #9E2A2B;
+    color: wheat;
+}
+
+.card.assignments {
+    width: 100%;
+}
+#card-hades .card-header {
+    background-color: #9E2A2B;
+    color: wheat;
+}
+.card .card-block img {
+    width: 70%;
+    height: 70%;
+}
+
+.card#subjectCard {
+    height: 200px;
+    width: 140px;
+
+}
+
+.card#subjectCard #card-subject-img img {
+    width: 100px;
+    height: 80px;
+    
+}
+.card#subjectCard .card-footer {
+    background-color: #9E2A2B;
+    color: white;
+    height: 80px;
+}
+.card#subjectCard .card-footer h6 {
+    color: wheat;
+}
+.card#assTopic {
+    padding: 20px;
+}
+
+#submittedStudent img, #wardView img {
+    height: 30px;
+    width: 30px;
+}
+
+.card#submittedStudent {
+    padding: 10px;
+    font-size: medium;
+    color: #9E2A2B;
+    background-color: wheat;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    /* align-items: center; */
+    /* align-content: center; */
+
+}
+
+.card.barChart {
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+/* classroomends */
+
+/* parent */
+.card-header #student-img {
+    width: 25px;
+    height: 25px;
+}
+.card.ward .card-header {
+    background-color: #9E2A2B;
+    color: wheat;
+}
+.card.ward .card-body {
+    background-color: wheat;
+    color: #9E2A2B;
+}
+/* parent ends */

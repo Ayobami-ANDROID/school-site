@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SHCCABK | E-Library</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- themify icon -->
+      
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+        <!-- am chart export.css -->
+       
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/dashboards.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/library.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        return false;
+      }
+      </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/lonelogo.svg" alt="">SHCCABK E-Resources</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html"><i class="fas fa-home    "></i> Home</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#" onclick="return show('books','videos');"> <i class="fas fa-book-open    "></i> E-Books <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#" onclick="return show('videos','books');" ><i class="fa fa-video-camera    "></i> Videos <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-columns"></i> Dashboard </a>
+                  </li>
+                  
+              </ul>
+              
+                <button href="" class="btn ml-auto" id="logout" type ="button"><i class="fas fa-door-open    "></i> Log Out</button>
+              
+
+              <!-- put link to log out inside href -->
+                
+              
+          </div>
+      </nav>
+    </div>
+
+      <!-- hero -->
+      <header>
+        <div class="row container-fluid">
+
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6 text-right b-trans">
+            <h1>Readers are Leaders!</h1>
+            <p>Get Books, Audio and Video Materials From Our Digital Library <br> Learn While You're Having Fun!</p>           
+          </div>
+        </div>
+
+          <br><br>
+          <div class="col-sm-12">
+            <div class="row container-fluid container">
+            
+              <!-- search -->
+              <div class="col-sm-5">
+                <form class="form-material">
+                  <div class="form-group form-primary">
+                      <input type="text" name="footer-email" class="form-control" required="">
+                      <span class="form-bar"></span>
+                      <label class="float-label"><i class="fa fa-search m-r-10"></i>Search</label>
+                  </div>
+                </form>
+              </div>
+              <!-- search ends -->
+
+              <!-- filter subjects -->
+              <div class="sol-sm-5">
+                <div class="form-group">
+                  <!-- <label for=""></label> -->
+                  <select class="form-control form-control-sm" name="bySubject" id="bSubject">
+                    <option selected><i class="fa fa-search" aria-hidden="true"></i> by subject</option>
+                    <option value="subject1">Subject 1</option>
+                    <option value="subect2">Subject 2</option>
+                  </select>
+                </div>
+              </div>
+              <!-- filter subjects ends -->
+              <div class="col-sm-2 text-left">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </div>
+            </div>
+          </div>
+      </header>
+      <!-- hero ends -->
+      <br>
+      <!-- main -->
+    <div class="container-fluid">
+      <div class="container">
+        
+        <div id="books">
+          <h3 class="subjects">Subjects</h3>
+          <div class="row subjects text-center">
+
+
+            <!-- repeat card for each subjects -->
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Art
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/bilogy-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Biology
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/economics-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Business Studies
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Art
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/bilogy-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Biology
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2">
+
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/economics-class.jpg" alt="" id="subjectCover">
+                </div>
+
+                <div class="card-footer" id="sbj">
+                  <p class="subName text-center" id="subName">
+                    Business Studies
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- repeat card for each subjects ends -->
+            <!-- <div class="text-right"><a href="#">See all subjects</a></div> -->
+            <!-- is there a need for all subjects page, everything should be listed here instead -->
+
+          </div>
+          <hr>
+
+          <!-- books -->
+          <h3 class="books"><i class="fa fa-book" aria-hidden="true"></i> Books</h3>
+          <div class="row">
+
+
+            <div class="col-sm-3">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" id="book">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          
+            <div class="col-sm-3">
+              <div class="card" id="book">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          
+            <div class="col-sm-3">
+              <div class="card" id="book">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          
+            <div class="col-sm-3">
+              <div class="card" id="book">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" id="subject">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          
+            <div class="col-sm-3">
+              <div class="card" id="book">
+
+                <div class="card-img-top" id="coverImg">
+                  <img src="assets/img/art-class.jpg" alt="" id="bookCover">
+                </div>
+
+                <div class="card-footer" id="bk">
+                  <p class="bookName text-center" id="bookName">
+                    Painting Techniques
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div><hr>
+          <!-- books ends -->
+        </div>
+
+        <!-- videos -->
+        
+        <div class="container-fluid" id="videos" style="display:none">
+          <div class="container">
+            <h3 class="videos"><i class="fa fa-video-camera" aria-hidden="true"></i> Video Materials</h3>
+            <div class="row">
+              <!-- iframe rows -->
+              
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <!-- note id  -->
+                <iframe id="URUJD5NEXC8 yt-video" width="220" height="140" src="https://www.youtube.com/embed/URUJD5NEXC8" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <!-- iframe rows ends -->
+            </div>
+          </div>
+        </div>
+        <!-- videos ends -->
+      
+
+
+      </div>
+    </div>
+      <!-- main ends -->
+
+    <!-- Optional JavaScript -->
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="Chrome">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="Firefox">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="Opera">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="Safari">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="assets/pages/widget/excanvas.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js "></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical-layout.min.js "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/script.js "></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

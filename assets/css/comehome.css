@@ -1,0 +1,295 @@
+body {
+    padding-top: 3rem;
+    color: black;
+}
+
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.carousel-caption p {
+    font-weight: lighter;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.carousel-caption .btn {
+    color: wheat;
+    background-color: #9E2A2B;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: #9E2A2B;
+    color: rgba(255, 248, 211, 1);
+    height: 80px;
+}
+
+.navbar .btn {
+    border: wheat;
+    background-color: wheat;
+    color: #9E2A2B;
+}
+
+.navbar .collapse.navbar-collapse {
+    background-color: #9E2A2B;
+    padding: 15px;
+    background-size: contain;
+}
+
+.navbar .collapse.navbar-collapse li {
+    border-radius: 10px;
+    /* background-color: wheat; */
+    /* margin: 10px; */
+    color: white;
+}
+
+.navbar .collapse.navbar-collapse li a:hover {
+    background-color: wheat;
+    color: #9E2A2B;
+}
+
+.navbar .collapse.navbar-collapse btn a:hover {
+    background-color: #9E2A2B;
+    color: wheat;
+}
+
+
+/* navbar */
+
+
+/* features */
+
+.marketing .card {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* features ends */
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* section2 */
+
+
+/* section2 ends */
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+
+/* features */
+
+.card {
+    /* height: 273px; */
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+
+/* features ends */
+
+#conform {
+    background-color: wheat;
+    padding: 20px;
+}
+
+.text-center.button button[type="submit"] {
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #3d1213;
+    color: wheat;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px wheat;
+}
+
+
+/* body */
+
+#footer {
+    color: white;
+    font-size: 14px;
+    background-color: #581a1b;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background-color: #581a1b;
+    color: wheat;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  } */
+
+#footer .footer-top .footer-links ul a {
+    color: wheat;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: tomato;
+}
+
+#footer .footer-newsletter {
+    font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    text-align: left;
+    border: 1px solid #e0e5e2;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #3d1213;
+    color: wheat;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px wheat;
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+    background: wheat;
+    color: tomato;
+}

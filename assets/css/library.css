@@ -1,0 +1,123 @@
+/* navbar */
+.navbar {
+background-color: #9E2A2B;
+color: wheat;
+height: 60px;
+box-shadow: 10px;
+}
+ .navbar-collapse{
+    background-color: #9E2A2B;
+    margin-top: 0;
+} 
+.navbar .navbar-nav {
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+   .navbar-collapse button{
+       margin-bottom:10px;
+   }
+.navbar img {
+    height: 45px;
+    width: 45px;
+}
+
+.navbar li a {
+    color: wheat;
+    font-size: large;
+    align-items: center;
+}
+#logout{
+    background-color: wheat;
+    color:#9E2A2B;
+    border-radius:10px;
+    padding:7px;
+    align-items: center;
+}
+
+/* a#logout {
+    border-radius: 10px;
+    background-color: wheat;
+    padding: 7px;
+    color: #9E2A2B;
+} */
+/* navbar ends */
+/* hero */
+header {
+    margin-top: 60px;
+    height: max-content;
+    /* background-color: wheat; */
+    padding: 100px;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .b-trans {
+    /* background: fixed; */
+    background-color: rgba(245, 222, 179, 0.705);
+    color: #9E2A2B;
+    /* background-blend-mode: color-dodge; */
+}
+/* hero ends */
+
+/* cards */
+
+/* subjects */
+.subjects .card {
+    height: 190px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.596);
+
+}
+.subjects .card img {
+    height: 150px;
+    width: 149px;
+    border-radius: 5px;
+}
+.subjects .card .card-footer {
+    background-color: #9E2A2B;
+    color: wheat;
+    height: 60px;
+}
+
+/* subjects ends */
+
+/* books */
+.books .card {
+    height: 270px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.596);
+
+}
+.books .card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.books .card .card-footer {
+    background-color: #9E2A2B;
+    color: wheat;
+    height: 70px;
+    font-size: smaller;
+}
+@media (max-width:640px) {
+    .b-trans{
+        height:150px;
+        width:150px;
+        
+    }
+    .b-trans h1{
+        font-size:35px;
+    }
+
+    
+}
+/* books ends */
+
+/* cards ends */

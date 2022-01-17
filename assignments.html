@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Classroom</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Favicon icon -->
+      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- themify icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+        <!-- am chart export.css -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/dashboards.css">
+
+
+</head>
+
+<body>
+  
+  <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                      <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                          <i class="ti-menu"></i>
+                      </a>
+                     
+
+                      <!-- logo -->
+                      <a href="index.html">
+                        <img class="img-fluid" src="assets/img/logo-light.svg" alt="" />
+                      </a>
+                      <!-- logo ends -->
+                      
+                      <a class="mobile-options waves-effect waves-light">
+                          <i class="ti-more"></i>
+                      </a>
+                    </div>
+                
+                    <div class="navbar-container container-fluid">
+                      <ul class="nav-left">
+                          <li>
+                              <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                          </li>
+                          
+                          <li>
+                              <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                  <i class="ti-fullscreen"></i>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav-right">
+                          
+                          <!-- user Profile -->
+                          <li class="user-profile header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <img src="assets/img/user.jpg" class="img-radius" alt="User-Profile-Image">
+                                  <span>Ezekiel Olubukola</span>
+                                  <i class="ti-angle-down"></i>
+                              </a>
+                              <ul class="show-notification profile-notification">
+                                  
+                                  <li class="waves-effect waves-light">
+                                      <a href="auth-normal-sign-in.html">
+                                          <i class="ti-layout-sidebar-left"></i> Logout
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <!-- User Profile -->
+                          
+                      </ul>
+                    </div>
+              </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+              <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar">
+                      <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                      <div class="pcoded-inner-navbar main-menu">
+                          
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="">
+                                <a href="dashboard.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-home"></i> </span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li><br>
+
+                            <li class="">
+                                <a href="assessments.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="fa fa-pie-chart" aria-hidden="true"></i> </span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Assessments</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li><br>
+
+                            <li class="active">
+                                <a href="assignments.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="fa fa-pencil" aria-hidden="true"></i> </span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Assignments</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li><br>
+
+                            <li class="">
+                              <a href="classes.html" class="waves-effect waves-dark">
+                                  <span class="pcoded-micon"><i class="ti-layout-grid2-alt" aria-hidden="true"></i> </span>
+                                  <span class="pcoded-mtext" data-i18n="nav.dash.main">Classes</span>
+                                  <span class="pcoded-mcaret"></span>
+                              </a>
+                          </li><br>
+
+                            <li class="">
+                                <a href="Library.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"> <i class="fa fa-book" aria-hidden="true"></i> </span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Library</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li><br>
+
+
+
+                        </ul>
+                        
+                    </div>
+                </nav>
+
+                <div class="pcoded-content">
+                    <!-- Page-header start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+
+                              <!-- greetings starts -->
+                                <div class="col-md-8">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">Welcome</h5>
+                                        <p class="m-b-0">Ezekiel Olubukola</p>
+                                    </div>
+                                </div>
+                                <!-- greetings ends -->
+
+                                <!-- breadcrumbs -->
+                                <div class="col-md-4">
+                                    <ul class="breadcrumb-title">
+                                      <li class="breadcrumb-item"><a href="index.html"> <i class="fa fa-home"></i></a></li>
+                                      <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                      <li class="breadcrumb-item"><a href="assignments.html">Assignments</a></li>
+                                    </ul>
+                                </div>
+                                <!-- breadcrumbs ends -->
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                      <div class="row">
+                                          <!-- classrule -->
+                                          <div class="card classrule" id="classrule">
+                                            <div class="card-header" id="classRule">
+                                                <h3>Class Rules</h3>
+                                                <div class="card-header-right">
+                                                    <ul class="list-unstyled card-option">
+                                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-block" id="rules">
+                                                <ul>
+                                                    <li id="rule1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, reiciendis! </li>
+                                                    <li id="rule2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, reiciendis!</li>
+                                                    <li id="rule3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, reiciendis!</li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                          <!-- classrule ends -->
+                                          
+                                          <!-- assignments list starts -->
+                                          <div class="card assignments" id="assignments">
+                                              <div class="card">
+                                                  <div class="card-header">
+                                                      <h3>Asignments</h3>
+                                                      <div class="card-header-right">
+                                                          <ul class="list-unstyled card-option">
+                                                              <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                              <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                              <li><i class="fa fa-minus minimize-card"></i></li>
+                                                              <li><i class="fa fa-refresh reload-card"></i></li>
+                                                          </ul>
+                                                      </div>
+                                                  </div>
+
+                                                  <!-- table -->
+                                                  <div class="card-block table-border-style">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th><i class="fas fa-book-open"></i> Subject</th>
+                                                                    <th><i class="fas fa-chalkboard-teacher"></i> Teacher</th>
+                                                                    <th><i class="fas fa-check-double    "></i> Status</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody>
+
+                                                                <tr id="submitted" >
+                                                                    <th scope="row" id="number">1</th>
+                                                                    <td id="subject">Use of English</td>
+                                                                    <td id="teacher">Mrs. Folake Adesola</td>
+                                                                    <td id="status" class="bg-success"><a href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i></a></td>
+                                                                </tr>
+
+                                                                <tr id="warning">
+                                                                    <th scope="row" id="number">2</th>
+                                                                    <td id="subject">Computer Science</td>
+                                                                    <td id="teacher">Copr. Eric John</td>
+                                                                    <td id="status" class="bg-warning"><i class="fa fa-bell" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr id="new" >
+                                                                    <th scope="row" id="number">3</th>
+                                                                    <td id="subject">Biology</td>
+                                                                    <td id="teacher">Mr. Odogwu Johnson</td>
+                                                                    <td id="status"><i class="fa fa-gift" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr id="lateNotSubmitted">
+                                                                    <th scope="row" id="number">4</th>
+                                                                    <td id="subject">Use of English</td>
+                                                                    <td id="teacher">Mrs. Folake Adesola</td>
+                                                                    <td id="status" class="bg-danger"> <i class="fa fa-exclamation" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr id="canceled" >
+                                                                    <th scope="row" id="number">1</th>
+                                                                    <td id="subject">Use of English</td>
+                                                                    <td id="teacher">Mrs. Folake Adesola</td>
+                                                                    <td id="status"><i class="fa fa-check-circle-o" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                  </div>
+                                                  <!-- table ends -->
+                                                  
+                                              </div>
+
+                                          </div>
+                                          <!-- assignments list ends -->
+
+                                          <!-- Assignment view -->
+                                          <div class="form-group col-sm-6">
+                                            <label for="selectTeacher">Select Teacher</label>
+                                            <select class="custom-select" name="selectTeacher" id="selectClass">
+                                                <option selected></option>
+                                                <option value="teacher_1">Teacher 1</option>
+                                                <option value="teacher_2">Teacher 2</option>
+                                                <option value="teacher_3">Teacher 3</option>
+                
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="selectSubject">Select Subject</label>
+                                            <select class="custom-select" name="selectSubject" id="selectSubject">
+                                                <option selected></option>
+                                                <option value="English">English</option>
+                                                <option value="Mathematics">Mathematics</option>
+                                                <option value="Art">Art</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- download Assignment -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="card" id="AssDown">
+                                                <div class="card-header">
+                                                    <h5>Click below to Download</h5>
+                                                    <div class="card-header-right">
+                                                        <ul class="list-unstyled card-option">
+                                                            <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                            <li><i class="fa fa-minus minimize-card"></i></li>
+                                                            <li><i class="fa fa-refresh reload-card"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block text-center">
+                                                    <img src="assets/img/Download.svg" alt="">
+                                                </div>
+                                                <div class="card-footer text-center" id="AssDownload">
+                                                    <button class="btn btn-primary">Download</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="card" id="AssUp">
+                                                <div class="card-header">
+                                                    <h5>Submit Assignment</h5>
+                                                    <div class="card-header-right">
+                                                        <ul class="list-unstyled card-option">
+                                                            <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                            <li><i class="fa fa-minus minimize-card"></i></li>
+                                                            <li><i class="fa fa-refresh reload-card"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block text-center">
+                                                    <img src="assets/img/upload.svg" alt="">
+                                                </div>
+                                                <div class="card-footer text-center" id="AssDownload">
+                                                    <div class="row">
+
+                                                        <div class="col-sm-8">
+                                                            <div class="form-group">
+                                                                <label for="AssUp"></label>
+                                                                <input type="file" class="form-control-file" name="" id="" placeholder="" aria-describedby="fileHelpId">
+                                                                <!-- <small id="fileHelpId" class="form-text text-muted">NB: file size &leq; 500KB</small> -->
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4">
+                                                            <button class="btn btn-primary">Submit</button>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                          <!-- Assignment View ends -->
+                                          <!-- shared files -->
+                                          .
+                                          <!-- shared files ends -->
+
+                                      </div>  
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- date -->
+   <script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+   <!-- date -->
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="Chrome">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="Firefox">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="Opera">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="Safari">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="assets/pages/widget/excanvas.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js "></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical-layout.min.js "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/script.js "></script>
+</body>
+
+</html>
